@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import sys
 
 # Form implementation generated from reading ui file 'window.ui'
 #
@@ -44,3 +45,7 @@ class Ui_MainWindow(object):
         self.menu.setTitle(_translate("MainWindow", "文件"))
         self.Openfile.setText(_translate("MainWindow", "打开"))
         self.Savefile.setText(_translate("MainWindow", "保存"))
+
+
+
+

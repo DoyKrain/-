@@ -1,0 +1,57 @@
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(728, 546)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(220, 10, 291, 61))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.groupBox = QtWidgets.QGroupBox(Form)
+        self.groupBox.setGeometry(QtCore.QRect(30, 130, 675, 300))
+        self.groupBox.setObjectName("groupBox")
+        self.pushButton_1 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_1.setGeometry(QtCore.QRect(40, 50, 110, 70))
+        self.pushButton_1.setObjectName("pushButton_1")
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_2.setGeometry(QtCore.QRect(190, 50, 110, 70))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.setGeometry(QtCore.QRect(340, 50, 110, 70))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_4.setGeometry(QtCore.QRect(490, 50, 110, 70))
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_6 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_6.setGeometry(QtCore.QRect(150, 160, 110, 70))
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.pushButton_5 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_5.setGeometry(QtCore.QRect(300, 160, 110, 70))
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.pushButton_7 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_7.setGeometry(QtCore.QRect(450, 160, 110, 70))
+        self.pushButton_7.setObjectName("pushButton_7")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "图像处理系统"))
+        self.label.setText(_translate("Form", "图像处理系统"))
+        self.groupBox.setTitle(_translate("Form", "图像变换"))
+        self.pushButton_1.setText(_translate("Form", "图像几何变换"))
+        self.pushButton_2.setText(_translate("Form", "图像像素变换"))
+        self.pushButton_3.setText(_translate("Form", "图像去噪"))
+        self.pushButton_4.setText(_translate("Form", "图像锐化"))
+        self.pushButton_5.setText(_translate("Form", "边缘检测"))
+        self.pushButton_6.setText(_translate("Form", "图像分割"))
+        self.pushButton_7.setText(_translate("Form", "卷积神经网络"))
